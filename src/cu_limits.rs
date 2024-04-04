@@ -6,4 +6,4 @@ pub const CU_LIMIT_RESET: u32 = 12_200;
 // pub const CU_LIMIT_MINE: u32 = 3200;
 pub const CU_LIMIT_MINE: u32 = 6400;
 pub const CU_LIMIT_CLAIM: u32 = 22_000;
-pub const PRIORITY_FEE: u32 = 12_800_000;
+pub const PRIORITY_FEE: u64 = 12_800_000;
