@@ -42,6 +42,7 @@ impl Miner {
         let amountf = (amount as f64) / (10f64.powf(ore::TOKEN_DECIMALS as f64));
         let cu_limit_ix = ComputeBudgetInstruction::set_compute_unit_limit(CU_LIMIT_CLAIM);
         let cu_price_ix = ComputeBudgetInstruction::set_compute_unit_price(PRIORITY_FEE);
+        println!("Priority Fee: {:?}", PRIORITY_FEE);
         let ix = ore::instruction::claim(pubkey, beneficiary, amount);
         println!("Submitting claim transaction...");
         match self
