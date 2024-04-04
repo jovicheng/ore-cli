@@ -77,7 +77,7 @@ impl Miner {
 
         // Sign and send transaction.
         let cu_limit_ix = ComputeBudgetInstruction::set_compute_unit_limit(CU_LIMIT_ATA);
-        let cu_price_ix = ComputeBudgetInstruction::set_compute_unit_price(self.priority_fee);
+        let cu_price_ix = ComputeBudgetInstruction::set_compute_unit_price(PRIORITY_FEE);
         let ix = spl_associated_token_account::instruction::create_associated_token_account(
             &signer.pubkey(),
             &signer.pubkey(),
