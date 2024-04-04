@@ -5,5 +5,5 @@ pub const CU_LIMIT_ATA: u32 = 240_000;
 pub const CU_LIMIT_RESET: u32 = 12_200;
 // pub const CU_LIMIT_MINE: u32 = 3200;
 pub const CU_LIMIT_MINE: u32 = 6400;
-pub const CU_LIMIT_CLAIM: u32 = 22_000;
+pub const CU_LIMIT_CLAIM: u32 = 220_000;
 pub const PRIORITY_FEE: u64 = 12_80_000;
